@@ -237,7 +237,7 @@ public class LevelDesigner : MonoBehaviour
                 int startindex, lastindex;
                 startindex = _BatchElement[K, 0];
                 lastindex = _BatchElement[K, 1];
-                ChangeLevel(_DesignIndex, startindex, lastindex);
+                ChangeLevel(_DesignIndex, startindex, lastindex); //Need to send info to camera script.
                 K++;
                 _BatchSize--;
                 yield return timer; //2f seconds
